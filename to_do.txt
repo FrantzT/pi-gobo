@@ -1,0 +1,2 @@
+1. Licencing for transmiter, reciever, Processing
+2. Uploading images to Git? (jpg?)
