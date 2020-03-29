@@ -9,7 +9,7 @@ Transmitter
 Arduino 1.8.5 and change its name to Arduino_0185 (that helps to differentiate the IDE environments) 
 This IDE will be used for creating the test DMX signal source
 It needs DMXSimple library to be installed
-\
+
 Reciever
 
 Arduino 0023 - Legacy
@@ -47,13 +47,16 @@ Install Processing for vi. // :RunProcessing
 
 ToDo:
 
+Installation guide.
+
 Licensing
 
 Schematics Fritzing
 
-reciver_rev15_pc // for processing in PC # it works
+reciver_rev15_pc 	// for processing in PC # it works
+			// that works by installing secondary Serial Port and connecting to a PC, then the ready code can be 			     // uploaded to Pi
 
-Sort out addressing // in dmx slave shield # not so important
+Sort out addressing     // in dmx slave shield # not so important
 
 ! DMX for RGB values
 
