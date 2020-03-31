@@ -1,5 +1,5 @@
 /* 
-This is basic transmitter, whcih in the project is used for test reason.
+This is basic transmitter, which in the project is used for test reason.
 It will otput DMX formated signal (but not actuall electrical DMX for this you would need to setup appropiate converter).
 The DMXSimple library is required to be installed into you Arudion library, 
 it is availbe for download here including additional documentation.
