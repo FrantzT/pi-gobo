@@ -1,5 +1,10 @@
 # pigobo
 
+About
+
+PiGobo is a proof of concept solution for Arduino based DMX signal reciever and Raspbery Pi based "Gobo" controller.
+
+ 
 
 Install 
 
@@ -14,7 +19,7 @@ Reciever
 Arduino 0023 - Legacy
 
 This IDE will be used for the actual DMX receiver
-All software package is here http://www.maxpierson.me/wp-content/uploads/2010/10/receiver_rev15.zip
+All software package are here http://www.maxpierson.me/wp-content/uploads/2010/10/receiver_rev15.zip
 It needs swap of the Hardware serial library (HardwareSerial.cpp)
 Place it in /Applications/Arduino_0023.app/Contents/Resources/JAVA/hardware/arduino/cores/arduino/
 
