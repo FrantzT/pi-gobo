@@ -54,9 +54,9 @@ Comment out the section bellow in HardwareSerial0.cpp to get it working with Ard
 
 For programming the Reciever board remove the DMX input wire from the pin 0 (RX), as if the Transmitter board is active or the input is “loaded” it will interrupt the Receiver boards communication and error the sketch upload.
 
+RPi
 
-
-
+Install Processing for Raspbery Pi 
 
 
 
