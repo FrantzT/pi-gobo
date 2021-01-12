@@ -24,12 +24,11 @@ void setup() {
 
   // Open the port you are using at the rate you want:
   myPort = new Serial(this, Serial.list()[3], 250000 );
-  //myPort.bufferUntil(LF);
+
 }
 
 void draw(){
-//  fill(0);
-//  textFont(f);
+
   int x = 50;
        if(message != null){
        //print(message);
@@ -46,27 +45,14 @@ void draw(){
                 value3 = Integer.parseInt(data[i]); 
                 }
                 background(value1,value2,value3);
-//                text("Value: " + i + " " + value,10,x);
-//                x += 20;
-//                delay(500);
+
               }
           }
        }
-//  delay(200);
+
 }
 
 void serialEvent(Serial myPort){
   message = myPort.readStringUntil(LF);    // read serial data
 
- //     if(message != null){
- //       // print(message);
- //        String [] data  = message.split(",");       // Split the comma-separated message
- //       if(data[0].charAt(0) == HEADER){            // check for header character in the first field
- //         for( int i = 1; i < data.length-1; i++){  // skip the header and terminating cr and lf
- //           int value = Integer.parseInt(data[i]);
- //           println("Value" +  i + " = " + value);  //Print the value for each field
- //           }
- //       println();
- //       }
- //      }
 }
