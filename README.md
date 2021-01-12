@@ -1,12 +1,28 @@
-# pigobo
+# PiGobo
 
 About
 
 PiGobo is a proof of concept solution for Arduino based DMX signal reciever and Raspbery Pi based "Gobo" controller.
 
- 
+How it works?
 
-Install 
+Arduino TX -> Arduino RX -> Serial -> Raspbery Pi (Processing)
+
+Arduino TX (running with DMX_TX_v1_working.ino) sends DMX encoded values to Arduino RX (running with receiver_rev15.pde) which sends decoded values to Rapsbery Pi ( running with DMXPi_v4.pde).
+
+In this proof of concept 3 values are passed to Processing which will display them with function background(value1,value2,value3) using colorMode(HSB).
+
+Why?
+
+This sceleton of a device can be developed into a fully functioning device able to emulate a Light Scanner and other Lighting fixtures using Raspbery's HDMI output. The core of the concept is combining of Arduino's DMX functionality and ability of RPi as media generator and processor.
+I was looking for this kind of simple solution, but it was not availble at the time.
+
+Note:
+
+To turn the Arduino into fully functional device it requires a simple DMX signal buffore to be interfaced on the Arudion RX input.
+
+
+Installation 
 
 Transmitter
 
