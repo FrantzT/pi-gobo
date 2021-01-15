@@ -20,17 +20,17 @@ I was looking for this kind of simple solution, but it was not available at the 
 Note:
 
 To turn the Arduino into a fully functional device it requires a simple DMX signal buffore to be interfaced on the Arduino RX input.
-
+Serial communication between Arudino RX and RPi requires logic level converter.
 
 Installation
 
-Transmitter
+Transmitter - Arduino TX
 
 Arduino 1.8.5 and change its name to Arduino_0185 (that helps to differentiate the IDE environments)
 This IDE will be used for creating the test DMX signal source
-It needs DMXSimple library to be installed
+It requiers DMXSimple library to be installed
 
-Receiver
+Receiver - Arduino RX
 
 Arduino 0023 - Legacy
 
@@ -52,9 +52,9 @@ Comment out the section below in HardwareSerial0.cpp to get it working with Ardu
         { Serial._rx_complete_irq(); }
         */
 
-For programming the Receiver board remove the DMX input wire from the pin 0 (RX), as if the Transmitter board is active or the input is “loaded” it will interrupt the Receiver boards communication and error the sketch upload.
+For programming the Receiver board remove the DMX input wire from the pin 0 (RX), when the Transmitter board is active or the input is “loaded” it will interrupt the Receiver boards communication and error the sketch upload.
 
-RPi
+RPi - (Processing)
 
 Install Processing for Raspberry Pi
 
