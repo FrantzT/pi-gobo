@@ -6,7 +6,7 @@ PiGobo is a proof of concept solution for Arduino based DMX signal receiver and 
 
 How does it work?
 
-Arduino TX -> Arduino RX -> Serial -> Raspberry Pi (Processing)
+Arduino TX -> DMX -> Arduino RX -> Serial -> Raspberry Pi (Processing)
 
 Arduino TX (running with DMX_TX_v1_working.ino) sends DMX encoded values to Arduino RX (running with receiver_rev15.pde) which sends decoded values to Raspberry Pi ( running with DMXPi_v4.pde).
 
