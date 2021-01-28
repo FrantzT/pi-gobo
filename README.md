@@ -11,7 +11,7 @@ Arduino TX -> DMX -> Arduino RX -> Serial -> Raspberry Pi (Processing)
 Arduino TX (running with DMX_TX_v1_working.ino) sends DMX encoded values to Arduino RX (running with receiver_rev15.pde) 
 which sends decoded values to Raspberry Pi ( running with DMXPi_v4.pde).
 
-In this proof of concept 3 values are passed to Processing which will display them with function background(value1,value2,value3) using colorMode(HSB).
+In this proof of concept 3 values (representing 3 DMX channels) are passed to Processing which will display them with function background(value1,value2,value3) using colorMode(HSB).
 
 ### Why?
 
