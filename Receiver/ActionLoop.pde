@@ -16,18 +16,18 @@ to the first two values received.  You can take this code out and put your own i
   //mySerial.print(dmxvalue[1], BIN);
   
    mySerial.print('H');
-  // Channel 1 will need to send a id value > 255 
+  // Channel 1 will need to send a id value < 255 
   // to identyfy that the incoming value is from the first channel 
   mySerial.print(",");
   
   mySerial.print(dmxvalue[2],DEC);
   mySerial.print(",");
-  // Channel 2 will need to send a id value > 255 
+  // Channel 2 will need to send a id value < 255 
   // to identyfy that the incoming value is from the first channel 
   //mySerial.print(257);
   mySerial.print(dmxvalue[3],DEC);
   mySerial.print(",");
-  // Channel 3 will need to send a id value > 255 
+  // Channel 3 will need to send a id value < 255 
   // to identyfy that the incoming value is from the first channel 
   //mySerial.print(258);
   mySerial.print(dmxvalue[4],DEC);
