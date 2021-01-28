@@ -28,7 +28,7 @@ https://www.sparkfun.com/products/12009
 
 ## Installation
 
-###### Transmitter - Arduino TX
+### Transmitter - Arduino TX
 
 
 Arduino 1.8.5 and change its name to Arduino_0185 (that helps to differentiate the IDE environments)
@@ -37,7 +37,7 @@ It requires a DMXSimple library to be installed.
 Available for download here:
 https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/tinkerit/DmxSimple_v3.zip
 
-###### Receiver - Arduino RX
+### Receiver - Arduino RX
 
 This part is using solution for Arduino DMX receiver by Max Pierson https://www.maxpierson.me/2010/10/09/rev15-of-the-arduino-dmx-reception-software-released/
 After extensive research I found his design the most reliable and with all the necessary features.  
@@ -114,7 +114,7 @@ Comment out the section below in HardwareSerial0.cpp to get it working with Ardu
 
 For programming the Receiver board remove the DMX input wire from the pin 0 (RX), when the Transmitter board is active or the input is “loaded” it will interrupt the Receiver boards communication and error the sketch upload.
 
-## RPi - (Processing)
+### RPi - (Processing)
 
 Install Processing for Raspberry Pi (tested with Rasbian) load DMXPi_v4.pde into the Processing IDE.
 
@@ -122,7 +122,7 @@ Since I did this development and test it, things has moved on and there is alrea
 https://github.com/sophacles/vim-processing
 
 
-Note:
+** Note:
 I have run the sketch on RPi2, which has a bit of struggle to run Processing IDE which is JAVA based.
 To make my life easier I used Processing in Vim https://github.com/sophacles/vim-processing over ssh.
 This significantly removes load from the RPi processor and makes developing in RPi as easy as any other system.
