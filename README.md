@@ -8,7 +8,8 @@ PiGobo is a proof of concept solution for Arduino based DMX signal receiver and 
 
 Arduino TX -> DMX -> Arduino RX -> Serial -> Raspberry Pi (Processing)
 
-Arduino TX (running with DMX_TX_v1_working.ino) sends DMX encoded values to Arduino RX (running with receiver_rev15.pde) which sends decoded values to Raspberry Pi ( running with DMXPi_v4.pde).
+Arduino TX (running with DMX_TX_v1_working.ino) sends DMX encoded values to Arduino RX (running with receiver_rev15.pde) 
+which sends decoded values to Raspberry Pi ( running with DMXPi_v4.pde).
 
 In this proof of concept 3 values are passed to Processing which will display them with function background(value1,value2,value3) using colorMode(HSB).
 
@@ -47,8 +48,8 @@ After extensive research I found his design the most reliable and with all the n
 
 As the main serial port is occupied by DMX signal input, I have created another software serial port, which connects to RPi (TX only).
 
-#define rx_Pin 9
-#define tx_Pin 10
+'#define rx_Pin 9
+#define tx_Pin 10'
 
 SoftwareSerial mySerial =  SoftwareSerial(rx_Pin, tx_Pin);
 
