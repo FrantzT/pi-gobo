@@ -8,6 +8,8 @@ PiGobo is a proof of concept solution for Arduino based DMX signal receiver and 
 
 Arduino TX -> DMX -> Arduino RX -> Serial -> Raspberry Pi (Processing)
 
+
+
 Arduino TX (running with DMX_TX_v1_working.ino) sends DMX encoded values to Arduino RX (running with receiver_rev15.pde) 
 which sends decoded values to Raspberry Pi ( running with DMXPi_v4.pde).
 
@@ -134,7 +136,7 @@ https://github.com/sophacles/vim-processing
 
 
 **Note:**
-I have run the sketch on RPi2, which has a bit of struggle to run Processing IDE which is JAVA based.
+I have run the sketch on RPi 3 Model B, which had a bit of struggle to run Processing IDE which is JAVA based.
 To make my life easier I used Processing in Vim https://github.com/sophacles/vim-processing over ssh.
 This significantly removes load from the RPi processor and makes developing in RPi as easy as any other system.
 Applications can be compiled and run directly from the command line.
