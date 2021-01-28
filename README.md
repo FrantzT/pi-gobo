@@ -20,7 +20,7 @@ I was looking for this kind of simple solution, but it was not available at the 
 If you would like to get a good overview of the DMX, I recomend this short article about its implementation in unreal engine:
 https://docs.unrealengine.com/en-US/WorkingWithMedia/DMX/Overview/index.html
 
-Note:
+**Note:**
 
 To turn the Arduino into a fully functional device it requires a simple DMX signal buffer (MAX485) to be interfaced on the Arduino RX input.
 Detalils of the circut: 
