@@ -18,7 +18,7 @@ In this proof of concept 3 values (representing 3 DMX channels) are passed to Pr
 This skeleton of a device can be developed into a fully functioning device able to emulate a Light Scanner and other Lighting fixtures using Raspbery's HDMI output. The core of the concept is combining Arduino's DMX functionality and ability of RPi as media generator and processor.
 I was looking for this kind of simple solution, but it was not available at the time.
 
-If you would like to get a good overview of the DMX, I recommend this short article about its implementation in unreal engine:
+If you would like to get a good overview of the DMX, I recommend this short article about its implementation in Unreal Engine:
 https://docs.unrealengine.com/en-US/WorkingWithMedia/DMX/Overview/index.html
 
 **Note:**
