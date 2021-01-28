@@ -9,6 +9,7 @@ PiGobo is a proof of concept solution for Arduino based DMX signal receiver and 
 Arduino TX -> DMX -> Arduino RX -> Serial -> Raspberry Pi (Processing)
 
 Board connection schematic drawing in Fritzing:
+
 https://github.com/FrantzT/pigobo/blob/master/PiGobo_devel_board.png
 
 Arduino TX (running with DMX_TX_v1_working.ino) sends DMX encoded values to Arduino RX (running with receiver_rev15.pde) 
@@ -22,15 +23,18 @@ This skeleton of a device can be developed into a fully functioning device able 
 I was looking for this kind of simple solution, but it was not available at the time.
 
 If you would like to get a good overview of the DMX, I recommend this short article about its implementation in Unreal Engine:
+
 https://docs.unrealengine.com/en-US/WorkingWithMedia/DMX/Overview/index.html
 
 **Note:**
 
 To turn the Arduino into a fully functional device it requires a simple DMX signal buffer (MAX485) to be interfaced on the Arduino RX input.
 Detalils of the circut: 
+
 https://www.maxpierson.me/2010/10/09/rev15-of-the-arduino-dmx-reception-software-released/
 
 Serial communication between Arudino RX and RPi requires logic level converter:
+
 https://www.sparkfun.com/products/12009
 
 ## Installation
@@ -42,11 +46,13 @@ Arduino 1.8.5 and change its name to Arduino_0185 (that helps to differentiate t
 This IDE will be used for creating the test DMX signal source
 It requires a DMXSimple library to be installed.
 Available for download here:
+
 https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/tinkerit/DmxSimple_v3.zip
 
 ### Receiver - Arduino RX
 
 This part is using solution for Arduino DMX receiver by Max Pierson: 
+
 https://www.maxpierson.me/2010/10/09/rev15-of-the-arduino-dmx-reception-software-released/
 
 After extensive research I found his design the most reliable and with all the necessary features.  
@@ -109,7 +115,10 @@ Frame has a following format.
 **Arduino 0023 - Legacy**
 
 This IDE will be used for the actual DMX receiver
-All software package are here http://www.maxpierson.me/wp-content/uploads/2010/10/receiver_rev15.zip
+All software package are here:
+
+http://www.maxpierson.me/wp-content/uploads/2010/10/receiver_rev15.zip
+
 It needs swap of the Hardware serial library (HardwareSerial.cpp)
 Place it in /Applications/Arduino_0023.app/Contents/Resources/JAVA/hardware/arduino/cores/arduino/
 
@@ -136,9 +145,11 @@ The RXD pin on the board header I used is GPIO 15, however that can be a diffren
 This article gives a lot of details about various serial connection settings for RPi:
 
 https://elinux.org/RPi_Serial_Connection
+
 https://elinux.org/RPi_Low-level_peripherals
 
 Since I did this development and test it, things has moved on and there is already package for Processing for RPi:
+
 https://pi.processing.org/get-started/
 
 
