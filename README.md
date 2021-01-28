@@ -132,11 +132,10 @@ For programming the Receiver board remove the DMX input wire from the pin 0 (RX)
 
 Install Processing for Raspberry Pi (tested with Rasbian) load DMXPi_v4.pde into the Processing IDE.
 
-The RXD pin on the board header I used is GPIO 15, however that can be a ddifernt port depending on the board you are planing to use.
+The RXD pin on the board header I used is GPIO 15, however that can be a diffrent port depending on the board you are planing to use.
 This article gives a lot of details about various serial connection settings for RPi:
 
 https://elinux.org/RPi_Serial_Connection
-
 https://elinux.org/RPi_Low-level_peripherals
 
 Since I did this development and test it, things has moved on and there is already package for Processing for RPi:
