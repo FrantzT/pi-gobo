@@ -176,7 +176,7 @@ You might need to run it with sudo.
 
 ### Ideas
 
-This project is only a basic frame work for a future development.
+This project is only a basic framework for a future development.
 Some idea of use would be for e.g. to triger via DMX a playback of a image/video/sound sequences, control of other hardware devices etc.
 Everthing directly from the Processing which has enormous capabilit for media creation.
 
