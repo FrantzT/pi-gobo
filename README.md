@@ -4,7 +4,7 @@
 
 PiGobo is a proof of concept solution for Arduino based DMX signal receiver and Raspberry Pi based "Gobo" controller.
 
-How does it work?
+###### How does it work?
 
 Arduino TX -> DMX -> Arduino RX -> Serial -> Raspberry Pi (Processing)
 
@@ -12,7 +12,7 @@ Arduino TX (running with DMX_TX_v1_working.ino) sends DMX encoded values to Ardu
 
 In this proof of concept 3 values are passed to Processing which will display them with function background(value1,value2,value3) using colorMode(HSB).
 
-Why?
+###### Why?
 
 This skeleton of a device can be developed into a fully functioning device able to emulate a Light Scanner and other Lighting fixtures using Raspbery's HDMI output. The core of the concept is combining Arduino's DMX functionality and ability of RPi as media generator and processor.
 I was looking for this kind of simple solution, but it was not available at the time.
@@ -26,9 +26,9 @@ https://www.maxpierson.me/2010/10/09/rev15-of-the-arduino-dmx-reception-software
 Serial communication between Arudino RX and RPi requires logic level converter:
 https://www.sparkfun.com/products/12009
 
-Installation
+## Installation
 
-Transmitter - Arduino TX
+###### Transmitter - Arduino TX
 
 
 Arduino 1.8.5 and change its name to Arduino_0185 (that helps to differentiate the IDE environments)
@@ -37,7 +37,7 @@ It requires a DMXSimple library to be installed.
 Available for download here:
 https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/tinkerit/DmxSimple_v3.zip
 
-Receiver - Arduino RX
+###### Receiver - Arduino RX
 
 This part is using solution for Arduino DMX receiver by Max Pierson https://www.maxpierson.me/2010/10/09/rev15-of-the-arduino-dmx-reception-software-released/
 After extensive research I found his design the most reliable and with all the necessary features.  
@@ -99,7 +99,7 @@ All software package are here http://www.maxpierson.me/wp-content/uploads/2010/1
 It needs swap of the Hardware serial library (HardwareSerial.cpp)
 Place it in /Applications/Arduino_0023.app/Contents/Resources/JAVA/hardware/arduino/cores/arduino/
 
-! Hack:
+Note:
 Comment out the section below in HardwareSerial0.cpp to get it working with Arduino IDE 1.8.5
 
 /* commented out to get it working with DMX code 
@@ -114,7 +114,7 @@ Comment out the section below in HardwareSerial0.cpp to get it working with Ardu
 
 For programming the Receiver board remove the DMX input wire from the pin 0 (RX), when the Transmitter board is active or the input is “loaded” it will interrupt the Receiver boards communication and error the sketch upload.
 
-RPi - (Processing)
+## RPi - (Processing)
 
 Install Processing for Raspberry Pi (tested with Rasbian) load DMXPi_v4.pde into the Processing IDE.
 
