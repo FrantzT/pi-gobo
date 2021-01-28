@@ -18,7 +18,7 @@ In this proof of concept 3 values are passed to Processing which will display th
 This skeleton of a device can be developed into a fully functioning device able to emulate a Light Scanner and other Lighting fixtures using Raspbery's HDMI output. The core of the concept is combining Arduino's DMX functionality and ability of RPi as media generator and processor.
 I was looking for this kind of simple solution, but it was not available at the time.
 
-If you would like to get a good overview of the DMX, I recomend this short article about its implementation in unreal engine:
+If you would like to get a good overview of the DMX, I recommend this short article about its implementation in unreal engine:
 https://docs.unrealengine.com/en-US/WorkingWithMedia/DMX/Overview/index.html
 
 **Note:**
@@ -43,14 +43,19 @@ https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/
 
 ### Receiver - Arduino RX
 
-This part is using solution for Arduino DMX receiver by Max Pierson https://www.maxpierson.me/2010/10/09/rev15-of-the-arduino-dmx-reception-software-released/
+This part is using solution for Arduino DMX receiver by Max Pierson: 
+https://www.maxpierson.me/2010/10/09/rev15-of-the-arduino-dmx-reception-software-released/
+
 After extensive research I found his design the most reliable and with all the necessary features.  
 
+**Serial**
+
 As the main serial port is occupied by DMX signal input, I have created another software serial port, which connects to RPi (TX only).
-'<
+
 #define rx_Pin 9
+
 #define tx_Pin 10
->'
+
 
 SoftwareSerial mySerial =  SoftwareSerial(rx_Pin, tx_Pin);
 
@@ -58,6 +63,7 @@ mySerial.begin(9600);
 
 Which runs with a much lower bit rate (9600) then DMX (250000).
 
+**Data frame**
 
 ActionLoop.pde contains the actuall send block which contains data chain expected by the reciever.
 
@@ -97,14 +103,14 @@ Frame has a following format.
   mySerial.println();
 
 
-Arduino 0023 - Legacy
+**Arduino 0023 - Legacy**
 
 This IDE will be used for the actual DMX receiver
 All software package are here http://www.maxpierson.me/wp-content/uploads/2010/10/receiver_rev15.zip
 It needs swap of the Hardware serial library (HardwareSerial.cpp)
 Place it in /Applications/Arduino_0023.app/Contents/Resources/JAVA/hardware/arduino/cores/arduino/
 
-Note:
+**Note:**
 Comment out the section below in HardwareSerial0.cpp to get it working with Arduino IDE 1.8.5
 
 /* commented out to get it working with DMX code 
@@ -127,7 +133,7 @@ Since I did this development and test it, things has moved on and there is alrea
 https://github.com/sophacles/vim-processing
 
 
-Note:
+**Note:**
 I have run the sketch on RPi2, which has a bit of struggle to run Processing IDE which is JAVA based.
 To make my life easier I used Processing in Vim https://github.com/sophacles/vim-processing over ssh.
 This significantly removes load from the RPi processor and makes developing in RPi as easy as any other system.
