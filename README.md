@@ -166,7 +166,7 @@ myPort = new Serial(this, Serial.list()[3], 250000);
 
 You will need just to find which one it is with function Serial.list().
 
-Needles to say that in this way you can also turn a PC into a PCGogo ;), but this is a another story...
+Needles to say that in this way you can also turn a PC into a PCGobo ;), but this is a another story...
 The aim of this project was to use the minimum requirments of a small box (RPi) to do a "big" thing.
 
 When you are happy with your code just upload it to RPi and run it from there.
