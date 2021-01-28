@@ -122,7 +122,7 @@ Since I did this development and test it, things has moved on and there is alrea
 https://github.com/sophacles/vim-processing
 
 
-** Note:
+** Note: **
 I have run the sketch on RPi2, which has a bit of struggle to run Processing IDE which is JAVA based.
 To make my life easier I used Processing in Vim https://github.com/sophacles/vim-processing over ssh.
 This significantly removes load from the RPi processor and makes developing in RPi as easy as any other system.
