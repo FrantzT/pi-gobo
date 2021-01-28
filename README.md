@@ -17,6 +17,9 @@ In this proof of concept 3 values are passed to Processing which will display th
 This skeleton of a device can be developed into a fully functioning device able to emulate a Light Scanner and other Lighting fixtures using Raspbery's HDMI output. The core of the concept is combining Arduino's DMX functionality and ability of RPi as media generator and processor.
 I was looking for this kind of simple solution, but it was not available at the time.
 
+If you would like to get a good overview of the DMX, I recomend this short article about its implementation in unreal engine:
+https://docs.unrealengine.com/en-US/WorkingWithMedia/DMX/Overview/index.html
+
 Note:
 
 To turn the Arduino into a fully functional device it requires a simple DMX signal buffer (MAX485) to be interfaced on the Arduino RX input.
@@ -122,7 +125,7 @@ Since I did this development and test it, things has moved on and there is alrea
 https://github.com/sophacles/vim-processing
 
 
-** Note: **
+Note:
 I have run the sketch on RPi2, which has a bit of struggle to run Processing IDE which is JAVA based.
 To make my life easier I used Processing in Vim https://github.com/sophacles/vim-processing over ssh.
 This significantly removes load from the RPi processor and makes developing in RPi as easy as any other system.
