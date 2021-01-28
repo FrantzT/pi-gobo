@@ -8,7 +8,8 @@ PiGobo is a proof of concept solution for Arduino based DMX signal receiver and 
 
 Arduino TX -> DMX -> Arduino RX -> Serial -> Raspberry Pi (Processing)
 
-
+Board connection schematic drawing in Fritzing:
+https://github.com/FrantzT/pigobo/blob/master/PiGobo_devel_board.png
 
 Arduino TX (running with DMX_TX_v1_working.ino) sends DMX encoded values to Arduino RX (running with receiver_rev15.pde) 
 which sends decoded values to Raspberry Pi ( running with DMXPi_v4.pde).
@@ -130,6 +131,13 @@ For programming the Receiver board remove the DMX input wire from the pin 0 (RX)
 ### RPi - (Processing)
 
 Install Processing for Raspberry Pi (tested with Rasbian) load DMXPi_v4.pde into the Processing IDE.
+
+The RXD pin on the board header I used is GPIO 15, however that can be a ddifernt port depending on the board you are planing to use.
+This article gives a lot of details about various serial connection settings for RPi:
+
+https://elinux.org/RPi_Serial_Connection
+
+https://elinux.org/RPi_Low-level_peripherals
 
 Since I did this development and test it, things has moved on and there is already package for Processing for RPi
 https://github.com/sophacles/vim-processing
