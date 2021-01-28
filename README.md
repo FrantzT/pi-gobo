@@ -1,6 +1,6 @@
 # PiGobo
 
-About
+##About
 
 PiGobo is a proof of concept solution for Arduino based DMX signal receiver and Raspberry Pi based "Gobo" controller.
 
