@@ -139,8 +139,8 @@ https://elinux.org/RPi_Serial_Connection
 
 https://elinux.org/RPi_Low-level_peripherals
 
-Since I did this development and test it, things has moved on and there is already package for Processing for RPi
-https://github.com/sophacles/vim-processing
+Since I did this development and test it, things has moved on and there is already package for Processing for RPi:
+https://pi.processing.org/get-started/
 
 
 **Note:**
