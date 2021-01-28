@@ -47,9 +47,10 @@ This part is using solution for Arduino DMX receiver by Max Pierson https://www.
 After extensive research I found his design the most reliable and with all the necessary features.  
 
 As the main serial port is occupied by DMX signal input, I have created another software serial port, which connects to RPi (TX only).
-
-'#define rx_Pin 9
-#define tx_Pin 10'
+'<
+#define rx_Pin 9
+#define tx_Pin 10
+>'
 
 SoftwareSerial mySerial =  SoftwareSerial(rx_Pin, tx_Pin);
 
