@@ -159,7 +159,24 @@ To make my life easier I used Processing in Vim https://github.com/sophacles/vim
 This significantly removes load from the RPi processor and makes developing in RPi as easy as any other system.
 Applications can be compiled and run directly from the command line.
 
+To make life even easier for the development, swap the RPi fro the PC.
+Use the USB serial port as the reciver in Processing:
+
+myPort = new Serial(this, Serial.list()[3], 250000);
+
+You will need just to find which one it is with function Serial.list().
+
+Needles to say that in this way you can also turn a PC into a PCGogo ;), but this is a another story...
+The aim of this project was to use the minimum requirments of a small box (RPi) to do a "big" thing.
+
+When you are happy with your code just upload it to RPi and run it from there.
+
 There has been particular issues with running the sketch on RPi related to security configuration.
 You might need to run it with sudo.
 
+### Ideas
+
+This project is only a basic frame work for a future development.
+Some idea of use would be for e.g. to triger via DMX a playback of a image/video/sound sequences, control of other hardware devices etc.
+Everthing directly from the Processing which has enormous capabilit for media creation.
 
