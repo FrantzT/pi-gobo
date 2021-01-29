@@ -159,7 +159,7 @@ To make my life easier I used Processing in Vim https://github.com/sophacles/vim
 This significantly removes load from the RPi processor and makes developing in RPi as easy as any other system.
 Applications can be compiled and run directly from the command line.
 
-To make life even easier for the development, swap the RPi fro the PC.
+To make life even easier for the development, swap the RPi for the PC.
 Use the USB serial port as the reciver in Processing:
 
 myPort = new Serial(this, Serial.list()[3], 250000);
